@@ -1,0 +1,29 @@
+//Path
+$path-img: "../img";
+$path-fonts: "../fonts";
+
+//Font
+$font-site:  'Formular', Arial, sans-serif;
+
+// Site
+$color-text: #211E27;
+$color-grey-light: #dbe1ea;
+$color-red: #e31e24;
+$color-dark-red: #cc1a20;
+$color-green: #6ac074;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+) !default;
