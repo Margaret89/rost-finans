@@ -1,0 +1,46 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная';
+
+block content
+	section.top-block
+		.container
+			.row
+				.col-12
+					.top-block__info
+						.top-block__title Займы онлайн в&nbsp;Северодвинске
+						.top-block__text Получить деньги без справок и поручителей легко и просто!
+						.top-block__label Снижаем ставку для всех!
+
+					form.form-calc
+						.form-calc__fields
+							.form-calc__item
+								.range.js-range
+									.range__top
+										span.range__title Сумма займа: 
+										span.range__val <span class="js-range-val" data-text="руб."></span>
+									input(type='text' name='prices' data-provide='slider' data-slider-min='1000' data-slider-max='30000' data-slider-step='1' data-slider-value='5000' data-slider-tooltip="hide" class="js-range-input")
+
+									.range__scale
+										.range__min.js-range-min
+										.range__max.js-range-max
+
+							.form-calc__item
+								.range.js-range(data-note='true')
+									.range__top
+										span.range__title Срок займа: 
+										span.range__val <span class="js-range-val" data-text="день"></span>
+									input(type='text' name='days' data-provide='slider' data-slider-min='10' data-slider-max='32' data-slider-step='1' data-slider-value='25' data-slider-tooltip="hide" class="js-range-input" )
+
+									.range__scale
+										.range__min.js-range-min
+										.range__max.js-range-max
+
+						.form-calc-res
+							.form-calc-res__label Всего к возврату
+							.form-calc-res__price 5170
+								span.form-calc-res__currency руб
+
+							input.btn(type="submit", value="Продолжить")
+

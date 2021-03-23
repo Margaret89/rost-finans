@@ -10,7 +10,11 @@
 @import "~bootstrap/scss/utilities/flex";
 @import "~bootstrap/scss/utilities/display";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/modal";
+
+// bootstrap-slider
+@import "~bootstrap-slider/src/sass/bootstrap-slider.scss";
 
 @import "~sass-rem/_rem.scss";
 

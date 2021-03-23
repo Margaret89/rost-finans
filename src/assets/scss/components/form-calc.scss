@@ -1,0 +1,46 @@
+/*-------------- form-calc -----------------*/
+.form-calc{
+	display: inline-flex;
+	max-width: 100%;
+	padding: 42px 20px 52px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px #C7D5EA;
+	
+	&__fields{
+		width: 472px;
+		padding-right: 48px;
+		padding-left: 22px;
+	}
+	
+	&__item:not(:last-child){margin-bottom: 42px;}
+}
+
+.form-calc-res{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 255px;
+	padding-left: 20px;
+	text-align: center;
+	border-left: 1px solid $color-grey-light;
+
+	&__label{
+		@include font(normal, 300, 1.6rem, 1.2, $color-text);
+		text-transform: uppercase;
+		margin-bottom: 28px;
+	}
+
+	&__price{
+		@include font(normal, bold, 4.8rem, 1, $color-text);
+		white-space: nowrap;
+	}
+
+	&__currency{
+		@include font(normal, bold, 2rem, 1, $color-text);
+		margin-left: 10px;
+	}
+
+	.btn{margin-top: 38px;}
+}

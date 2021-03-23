@@ -64,6 +64,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.6.0",
+    "bootstrap-slider": "^11.0.2",
     "inputmask": "^4.0.9",
     "jquery": "^3.6.0",
     "sass-rem": "^2.0.1",
