@@ -2,7 +2,7 @@ html,
 body{
 	background: #fff;
 	font-family: $font-site;
-	@include font(normal, normal, 10px, 1.75, $color-text);
+	@include font(normal, 300, 10px, 1.75, $color-text);
 	box-sizing:border-box;
 	min-height:100%;
 }

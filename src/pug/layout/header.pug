@@ -1,4 +1,34 @@
 header.header
 	.container
 		.row
-			.col-12 header
+			.col-12
+				.header__content
+					.header__logo
+						a(href="/")
+							img(src="assets/img/logo.jpg", alt="")
+
+					.header-contact
+						.header-contact__icon
+							+svg('ic-call','ic-call', '20', '20')
+							
+						.header-contact__content
+							.header-contact__label Бесплатная горячая линия.
+							.header-contact__text
+								a.header-contact__phone(href="tel:+78002507271") 8(800)250-72-71
+
+					.header-contact
+						.header-contact__icon
+							+svg('ic-mail','ic-mail', '26', '21')
+
+						.header-contact__content
+							.header-contact__label E-Mail для заявлений клиентов:
+							.header-contact__text
+								a(href="mailto:zayavleniya@rostfinance.com") zayavleniya@rostfinance.com
+
+					.header-contact
+						.header-contact__icon
+							+svg('ic-mail','ic-mail', '26', '21')
+
+						.header-contact__content
+							.header-contact__text
+								a(href="mailto:usurer2012@bk.ru") usurer2012@bk.ru
