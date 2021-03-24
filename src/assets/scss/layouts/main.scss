@@ -50,12 +50,11 @@ h1,.h1{
 h2,.h2{
 	font-size: 2.6rem;
 	font-weight: bold;
-	margin-bottom: 3.2rem;
+	margin-bottom: 3rem;
 }
 
 h3,.h3{
 	font-size: 2rem;
-	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
 
@@ -70,6 +69,9 @@ h5,.h5{
 }
 
 ul, ol{list-style-position: inside;}
+
+p+h2, p+.h2{margin-top: 5.8rem;}
+p+h3, p+.h3{margin-top: 5.8rem;}
 
 ul li{
 	position: relative;
@@ -86,6 +88,8 @@ ul li{
 		margin-right: 10px;
 	}
 }
+
+li{margin-bottom: 12px;}
 
 .wrapper{
 	display: flex;
@@ -107,6 +111,7 @@ button.btn{
 	height: 4.6rem;
 	background: $color-red;
 	border: 0;
+	outline: 0;
 	border-radius: 2.3rem;
 	@include font(normal, 500, 1.4rem, 4.4rem, #fff);
 	text-transform: uppercase;
@@ -140,3 +145,5 @@ button.btn:hover{
 .text-justify{text-align: justify !important;}
 .text-uppercase{text-transform: uppercase !important;}
 .text-bold {font-weight: 700 !important;}
+
+.bg-light-blue{background: #f9f8ff;}
