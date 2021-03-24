@@ -44,3 +44,24 @@ block content
 
 							input.btn(type="submit", value="Продолжить")
 
+	section.steps
+		.container
+			.row
+				.col-12
+					.h1 Как оформить займ?
+
+					.step-list
+						-
+							var list=[
+								{icon:'ic-hand', icon_width:'18', icon_height:'35', text:'Оставьте онлайн-заявку'},
+								{icon:'ic-compass', icon_width:'30', icon_height:'30', icon_color:'light-red', text:'Дождитесь одобрения'},
+								{icon:'ic-copy', icon_width:'21', icon_height:'28', icon_color:'yellow', text:'Подпишите договор'},
+								{icon:'ic-money', icon_width:'38', icon_height:'26', icon_color:'green', text:'Получите деньги'},
+							]
+
+						each item in list
+							.step-list__item
+								.step-list__icon
+									+svg(item.icon, item.icon, item.icon_width, item.icon_height)
+
+								.step-list__text= item.text
