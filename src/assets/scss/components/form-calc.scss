@@ -44,3 +44,57 @@
 
 	.btn{margin-top: 38px;}
 }
+
+@media (max-width: 767px) {
+	.form-calc{
+		display: block;
+		padding: 33px 17px 40px;
+
+		&__fields{
+			width: 100%;
+			padding: 0;
+		}
+
+		&__item{padding-bottom: 20px;}
+
+		&__item:not(:last-child){
+			border-bottom: 1px solid $color-grey-light;
+			margin-bottom: 18px;
+		}
+	}
+
+	.form-calc-res{
+		display: block;
+		padding: 24px 0 0;
+		border-left: 0;
+		border-top: 1px solid $color-grey-light;
+		text-align: left;
+
+		&__content{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__label{
+			max-width: 100px;
+			font-size: 1.2rem;
+			margin-bottom: 0;
+			margin-right: 15px;
+		}
+
+		&__price{font-size: 3rem;}
+
+		&__currency{
+			font-size: 1.8rem;
+			margin-left: 5px;
+		}
+
+		.btn{
+			display: block;
+			width: 245px;
+			max-width: 100%;
+			margin: 28px auto 0;
+		}
+	}
+}

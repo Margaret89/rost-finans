@@ -10,8 +10,8 @@ block content
 				.col-12
 					.top-block__info
 						.top-block__title Займы онлайн в&nbsp;Северодвинске
-						.top-block__text Получить деньги без справок и поручителей легко и просто!
-						.top-block__label Снижаем ставку для всех!
+						.top-block__text.d-none.d-md-block Получить деньги без справок и поручителей легко и просто!
+						.top-block__label.d-none.d-md-block Снижаем ставку для всех!
 
 					form.form-calc
 						.form-calc__fields
@@ -38,9 +38,10 @@ block content
 										.range__max.js-range-max
 
 						.form-calc-res
-							.form-calc-res__label Всего к возврату
-							.form-calc-res__price 5170
-								span.form-calc-res__currency руб
+							.form-calc-res__content
+								.form-calc-res__label Всего к&nbsp;возврату
+								.form-calc-res__price 5170
+									span.form-calc-res__currency руб
 
 							input.btn(type="submit", value="Продолжить")
 
@@ -103,7 +104,7 @@ block content
 					.review-wrap__top
 						.h1 Отзывы
 
-						.review-slider-arr.js-review-slider-arr
+						.review-slider-arr.js-review-slider-arr.d-none.d-md-inline-flex
 
 		.review-slider.js-review-slider
 			-
@@ -166,7 +167,7 @@ block content
 					]
 
 				each item in list
-					.col-4
+					.col-md-6.col-lg-4
 						.mark
 							.mark__icon
 								img(src="assets/img/"+item.logo, alt="")

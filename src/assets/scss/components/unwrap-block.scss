@@ -59,3 +59,33 @@
 		margin-bottom: 22px;
 	}
 }
+
+@media (max-width: 767px) {
+	.unwrap-block{
+		padding: 34px 17px;
+		margin-bottom: 16px;
+
+		&__title{font-size: 1.6rem;}
+
+		&__btn{
+			flex: 0 0 30px;
+			width: 30px;
+			height: 30px;
+			margin-top: 0;
+
+			.icon{
+				max-width: 12px;
+				max-height: 12px;
+			}
+		}
+
+		&__subtitle,
+		&__content{
+			font-size: 1.4rem;
+			line-height: 1.7;
+		}
+
+		&__content{padding-top: 20px;}
+		&__subtitle{margin-bottom: 10px;}
+	}
+}

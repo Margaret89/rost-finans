@@ -9,3 +9,8 @@
 	border-radius: 5px;
 	padding: 44px 62px;
 }
+
+@media (max-width: 767px) {
+	.text-block-wrap{margin: 35px 0;}
+	.text-block{padding: 40px 18px;}
+}

@@ -1,6 +1,13 @@
 .header{
 	background: #fff;
 	padding: 20px 0;
+	position: relative;
+
+	.container,
+	.row,
+	.col-12{
+		position: static;
+	}
 
 	&__content{
 		display: flex;
@@ -15,6 +22,7 @@
 
 .header-contact{
 	display: inline-flex;
+	padding: 0 15px;
 
 	&__icon{
 		flex: 0 0 26px;
@@ -43,4 +51,74 @@
 
 	&__text a:hover{color: $color-red;}
 	&__phone{font-size: 2rem;}
+}
+
+@media (max-width: 991px) {
+	.header{padding: 15px 0;}
+
+	.header-mob-contact-wrap{
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+	}
+
+	.header-mob-contact{
+		&:not(:last-child){margin-right: 50px;}
+
+		&__btn{
+			cursor: pointer;
+
+			.icon{
+				fill: $color-red;
+				transition: all 0.2s ease 0s;}
+		}
+
+		&__btn.active .icon{fill: #dbdbdb;}
+
+		&__popup{
+			display: none;
+			background: #fff;
+			border-top: 1px solid $color-grey-light;
+			padding: 33px 0 30px;
+			width: 100%;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			z-index: 10;
+
+			.header-contact{
+				width: 100%;
+				padding: 0;
+			}
+
+			.header-contact:not(:last-child){margin-bottom: 27px;}
+		}
+
+		&__close{
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 10px;
+			right: 16px;
+			cursor: pointer;
+
+			.icon{
+				fill: $color-text;
+				transition: all 0.2s ease 0s;
+			}
+		}
+
+		&__close:hover .icon{fill: $color-red;}
+	}
+}
+
+@media (max-width: 767px) {
+	.header{
+		&__logo img{max-width: 126px;}
+	}
 }

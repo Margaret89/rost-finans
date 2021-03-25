@@ -124,3 +124,42 @@ button.btn-arr:hover{
 
 	.btn-arr:not(:last-child){margin-right: 15px;}
 }
+
+@media (max-width: 767px) {
+	.review-wrap{
+		margin: 35px 0;
+		padding: 7px 0;
+
+		&__top{margin-bottom: 30px;}
+	}
+
+	.review-slider{
+		.slick-list{
+			padding-right: 100px!important;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		.slick-slide{margin: 0 10px;}
+
+		&__item{padding: 18px;}
+
+		&__img{
+			flex: 0 0 62px;
+			width: 62px;
+			height: 62px;
+			margin-right: 16px;
+		}
+
+		&__name,
+		&__text{
+			font-size: 1.4rem;
+			line-height: 1.28;
+		}
+
+		&__text{
+			margin-top: 8px;
+			padding: 23px 0;
+		}
+	}
+}

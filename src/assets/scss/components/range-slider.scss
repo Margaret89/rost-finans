@@ -53,3 +53,33 @@
 
 	.slider.slider-horizontal .slider-handle, .slider.slider-horizontal .slider-tick{margin-left: -12px;}
 }
+
+@media (max-width: 767px) {
+	.range{
+		&__top{
+			font-size: 1.4rem;
+			margin-bottom: 14px;
+		}
+
+		&__val{font-size: 1.8rem;}
+
+		.slider-handle{
+			width: 30px;
+			height: 30px;
+
+			&::after{
+				width: 10px;
+				height: 10px;
+			}
+		}
+
+		.slider.slider-horizontal .slider-handle,
+		.slider.slider-horizontal .slider-tick{
+			margin-left: -15px;
+		}
+
+		.slider.slider-horizontal .slider-track{margin-top: 0;}
+
+		&__scale{font-size: 1.2rem;}
+	}
+}

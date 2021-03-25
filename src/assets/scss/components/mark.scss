@@ -4,7 +4,7 @@
 .mark{
 	display: flex;
 	align-items: center;
-	height: 100%;
+	height: calc(100% - 30px);
 	background: #fff;
 	border-radius: 10px;
 	padding: 20px 28px;
@@ -47,5 +47,25 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.mark-wrap{margin: 40px 0;}
+
+	.mark{
+		height: auto;
+		min-height: 80px;
+		padding: 12px 10px 12px 5px;
+		margin-bottom: 20px;
+
+		&__text{margin-top: 7px;}
+		&__icon img{max-height: 55px;}
+
+		&__icon{
+			flex: 0 0 80px;
+			min-width: 40px;
+			margin-right: 10px;
+		}
 	}
 }

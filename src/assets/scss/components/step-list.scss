@@ -118,3 +118,48 @@
 		animation-fill-mode: forwards;
 	}
 }
+
+@media (max-width: 991px) {
+	.step-list{
+		&__item{width: calc(50% - 40px);}
+	}
+}
+
+@media (max-width: 767px) {
+	.steps{
+		margin-bottom: 30px;
+		
+		.h1, h1{margin-bottom: 0.5rem;}
+	}
+
+	.step-list{
+		margin-left: 0;
+		margin-right: 0;
+
+		&__item{
+			width: 100%;
+			margin: 20px 0;
+			padding: 25px 15px;
+		}
+
+		&__arr{
+			top: 100%;
+			transform: rotate(90deg);
+			left: 0;
+			right: 0;
+			margin: 12px auto 0;
+		}
+
+		&__icon{
+			width: 40px;
+			height: 40px;
+			margin-bottom: 17px;
+		}
+
+		&__text{
+			max-width: 100%;
+			font-size: 1.6rem;
+			line-height: 1.25;
+		}
+	}
+}
