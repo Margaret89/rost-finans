@@ -37,6 +37,7 @@ module.exports = {
     path: PATHS.dist,
   },
   optimization: {
+    minimize: false,
     splitChunks: {
       cacheGroups: {
         vendor: {
