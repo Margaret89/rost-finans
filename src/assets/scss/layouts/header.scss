@@ -50,7 +50,10 @@
 	}
 
 	&__text a:hover{color: $color-red;}
-	&__phone{font-size: 2rem;}
+	&__phone{
+		font-size: 2rem;
+		white-space: nowrap;
+	}
 }
 
 @media (max-width: 991px) {
