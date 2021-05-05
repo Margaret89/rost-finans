@@ -84,9 +84,6 @@ if($('.js-step-list').length){
 	var stepBlockTop = $('.js-step-list').offset().top;
 	var topStepScroll = stepBlockTop - $(window).outerHeight()/2;
 
-	console.log(stepBlockTop);
-	console.log(topStepScroll);
-
 	$(window).on('scroll', function(){
 		if($(this).scrollTop()>=topStepScroll){
 			stepAnim(0);

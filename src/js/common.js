@@ -1,4 +1,9 @@
 import $ from 'jquery';
+(function (global) {
+	global.$ = $;
+	global.jQuery = $;
+}(typeof window !== 'undefined' ? window : this));
+
 var Slider = require("bootstrap-slider");
 import 'slick-slider/slick/slick.min.js';
 
